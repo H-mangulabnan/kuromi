@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+
+html body {
+    min-height: 100vh;
+    display: flex;
+    background-color: rgb(122, 107, 122);
+}
+
+.box {
+    max-width: 425px;
+    height: 600px;
+    margin: auto;
+    background-color: #E9C0FA;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 425px) {
+    .box {
+        height: 100vh;
+    }
+}
+
+.clouds {
+    height: 130px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.clouds img{
+    height: 60px;
+    padding: 0 20px;
+}
+
+.slide {
+    animation: 5s slide infinite linear;
+    display: inline-block;
+    height: 100%;
+}
+.cloud1 {
+    margin-top: 13px;
+}
+.cloud3 {
+    margin-top: 24px;
+}
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.kuromi {
+    top: 37px;
+    left: 20px;
+    animation: movement 2s ease-in-out infinite alternate;
+}
+.kuromi img {
+    height: 120px;
+}
+
+@keyframes movement {
+    0% {
+        top: 20px;
+    }
+    100% {
+        top: 50px;
+    }
+}
+
+.enter-acc {
+    height: 75px;
+    margin: 40px 0 -5px 0;
+}
+.logo {
+    height: 69px;
+    margin-bottom: -43px;
+}
+form {
+    width: 400px;
+    margin: auto;
+}
+form div.mb-3 {
+    width: 220px;
+}
+form div.mb-3 input,
+form div.mb-4 input {
+    border-radius: 100px;
+    border: 3px solid #8E44AD;
+}
+form div.mb-3 input:focus {
+    border-color: #8E44AD;
+    box-shadow: 0 0 0 0.2rem rgba(142, 68, 173, 0.25); /* This adds a subtle box shadow on focus */
+
+}
+button.btn.btn-primary {
+    border-radius: 100px;
+    background-color: #FA9EE1;
+    border: none;
+    color: black;
+    font-family: 'Concert One', sans-serif;
+    padding: 8px 20px;
+    
+}
+div.text-center h5{
+    font-size: 15px;
+}
+h5.text-center{
+    font-size: 14px;
+    color: rgb(79, 79, 255);
+    cursor: pointer;
+}
+h5.text-center:hover {
+    text-decoration: underline;
+}
+
+.heart1{
+    height: 150px;
+    right: -5px;
+    bottom: -25px;
+    transform: rotate(-5deg);
+}
+
+@media screen and (min-width:431px) and (max-width:768px) {
+    .box {
+        height: 700px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:430px) {
+    .box {
+        border-radius: 0;
+        height: 100vh;
+    }
+    .clouds {
+        height: 170px;
+    }
+    .clouds img{
+        height: 70px;
+        padding: 0 10px;
+    }
+    .logo {
+        height: 80px;
+    }
+    .kuromi {
+        top: 50px;
+        left: 7px;
+    }
+    .kuromi img {
+        height: 140px;
+    }
+    .enter-acc {
+        height: 90px;
+        margin: 40px 0 -13px 0;
+    }
+    .heart1 {
+        height: 135px;
+        bottom: -20px;
+    }
+}
+
+
+
+
